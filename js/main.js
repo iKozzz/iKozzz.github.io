@@ -1,4 +1,6 @@
 $(document).ready( function() {
+    new WOW().init();
+
     $('.scroll').click(function(e){
         e.preventDefault();
         var destination = $(this).attr('href');

@@ -108,7 +108,41 @@ body {
 .container {width: 100%; height: 100%;}
 
 .background {
-    background: url("../img/nebula.jpg");
+    background: url("../img/space.jpg");
+}
+
+.fog-left, .fog-right, .brite, .glow-sparks, .heart {
+    position: absolute;
+}
+
+.fog-left {
+    width: 85%;
+    height: auto;
+    z-index: 0;
+}
+
+.fog-right {
+    width: 85%;
+    height: auto;
+    z-index: 0;
+}
+
+.brite {
+    width: 85%;
+    height: auto;
+    z-index: 0;
+}
+
+.glow-sparks {
+    width: 80%;
+    height: auto;
+    z-index: 1;
+}
+
+.heart {
+    width: 80%;
+    height: auto;
+    z-index: 1;
 }
 
 .logo {

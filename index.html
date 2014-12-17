@@ -14,7 +14,6 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/animate.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body class="background">
@@ -22,24 +21,22 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!--canvas id="processing" data-processing-sources="hello-web.pde">Please update your browser / Пожалуйста обновите ваш браузер</canvas-->
-        <!--div class="logo">
-            <img class="wow rotateIn" src="img/hipnoCircle.png" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="10">
-        </div-->
-        
-        <img class="fog-left wow pulse" src="img/fog_left.png" alt="fog-left" data-wow-duration="2s" data-wow-iteration="10">
-        <img class="fog-right wow pulse" src="img/fog_right.png" alt="fog-right" data-wow-duration="2s" data-wow-iteration="10">
-        <img class="brite wow pulse" src="img/brite.png" alt="brite" data-wow-duration="3s" data-wow-delay="2s" data-wow-iteration="10">
-        <img class="glow-sparks wow pulse" src="img/glow_sparks.png" alt="sparks" data-wow-duration="3s" data-wow-delay="2s" data-wow-iteration="10">
-        <img class="heart wow flash" src="img/heart_of_nebula.png" alt="heart" data-wow-duration="3s" data-wow-iteration="10">
-        
+        <div id="hello-world" class="wrapper">
+            <ul id="scene" class="scene">
+                <li class="layer" data-depth="0.21"><img class="floaty" src="img/fog_left.png" alt="fog-left"></li>
+                <li class="layer" data-depth="0.15"><img class="floaty-reverse" src="img/fog_right.png" alt="fog-right"></li>
+                <li class="layer" data-depth="0.06"><img class="wavy" src="img/brite.png" alt="brite"></li>
+                <li class="layer" data-depth="0.09"><img class="scally" src="img/heart_of_nebula.png" alt="heart"></li>
+                <li class="layer" data-depth="0.40"><img class="rotaty" src="img/glow_sparks.png" alt="sparks"></li>
+            </ul>
+        </div>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>       
         <script src="js/plugins.js"></script>
-        <!--script src="js/vendor/processing.min.js"></script-->
         <script src="js/vendor/wow.min.js"></script>
+        <script src="js/vendor/jquery.parallax.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -101,7 +101,6 @@ textarea {
 body {
     font-family: 'Ubuntu', sans-serif;
     min-width: 20em;
-    background: rgba(82, 80, 71, 0.83);
 }
 .right {float: right;}
 .left {float: left;}
@@ -111,46 +110,139 @@ body {
     background: url("../img/space.jpg");
 }
 
-.fog-left, .fog-right, .brite, .glow-sparks, .heart {
+#hello-world ul {
+    margin: 0;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#hello-world li {
+    list-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.scene {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
     position: absolute;
 }
 
-.fog-left {
-    width: 85%;
-    height: auto;
-    z-index: 0;
+
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+.wavy {
+ -webkit-animation: wavy 10s 2s infinite alternate cubic-bezier(0.32,0,0.58,1);
+	animation: wavy 10s 2s infinite alternate cubic-bezier(0.32,0,0.58,1);
+}
+@-webkit-keyframes wavy {
+    0% {
+        opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+    }
+    50% {
+        opacity: 0.6;
+		-webkit-transform: scale3d(0.97, 0.94, 1.1);
+		transform: scale3d(0.97, 0.94, 1.1)
+    }
+    100% {
+        opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+    }
 }
 
-.fog-right {
-    width: 85%;
-    height: auto;
-    z-index: 0;
+
+.scally {
+	-webkit-animation: scally 15s infinite ease;
+	animation: scally 15s infinite ease;
+}
+@-webkit-keyframes scally {
+  0% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1)
+  }
+
+  50% {
+   -webkit-transform: scale3d(1.15, 1.05, 1.3);
+   transform: scale3d(1.15, 1.05, 1.3)
+  }
+
+  100% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1)
+  }
 }
 
-.brite {
-    width: 85%;
-    height: auto;
-    z-index: 0;
+
+
+.floaty {
+	-webkit-animation: floaty 10s infinite linear;
+	animation: floaty 10s infinite linear;
+}
+.floaty-reverse {
+	-webkit-animation: floaty 10s infinite reverse;
+	animation: floaty 10s infinite reverse;
+}
+@-webkit-keyframes floaty {
+	0% {
+		-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+	25% {
+		
+	}
+	50% {
+		-webkit-transform: matrix(1.1, -0.2, 0, 1, -5, -5);
+		transform: matrix(1.1, -0.2, 0, 1, -5, -5);
+	}
+	75% {
+		
+	}
+	100% {
+		-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
 }
 
-.glow-sparks {
-    width: 80%;
-    height: auto;
-    z-index: 1;
-}
 
-.heart {
-    width: 80%;
-    height: auto;
-    z-index: 1;
+.rotaty {
+	-webkit-animation: rotaty 15s infinite 5s alternate cubic-bezier(0.32,0,0.8,1);;
+	animation: rotaty 15s infinite 5s alternate cubic-bezier(0.32,0,0.8,1);;
 }
-
-.logo {
-    position: relative;
-    padding-left: 38%;
-    padding-top: 17%;
+@-webkit-keyframes rotaty {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+	50% {
+		-webkit-transform: rotate(5deg);
+		-ms-transform: rotate(5deg);
+		transform: rotate(5deg);
+	}
+	
+	100% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 }
-
 
 /* ==========================================================================
    Helper classes

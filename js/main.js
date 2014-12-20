@@ -32,9 +32,15 @@ $(document).ready(function () {
 			sound.play();
 		} else {
 			sound.pause();
-		};
+		}
 		$(this).children().toggleClass('fa-volume-off');
 		$(this).children().toggleClass('fa-volume-up');
+		$(this).toggleClass('button-click');
+	});
+	
+	$('figure').hover(function () {
+		$('.eye').toggle();
+		$('figure img').toggleClass("padding");
 	});
 	
 	$('.scroll').click(function (e) {

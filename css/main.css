@@ -145,8 +145,20 @@ body {
 	border-bottom-right-radius: 95%;
 }
 
-#hi figure img:hover {
+.padding {
 	padding-top: 3em;
+}
+
+.eye {
+	position: fixed;
+	top: 10.7em;
+	left: 2.38em;
+	background-color: rgba(216, 72, 182, 0.33);
+	width: 1.08em;
+	height: 0.5em;
+	border-radius: 50%;
+	z-index: 1;
+	display: none;
 }
 
 #hi h3 {
@@ -160,7 +172,7 @@ body {
 
 #hi h2 {
 	position: absolute;
-	bottom: 0;
+	bottom: 1em;
 	margin: 0;
 	padding-left: 4.5em;
 	color: rgba(214, 109, 77, 0.63);
@@ -174,19 +186,24 @@ body {
 	bottom: 0;
 	min-height: 17em;
 	width: 15.5em;
+	padding-bottom: 1.5em;
 	background: rgba(148, 148, 177, 0.17);
 	border-top-right-radius: 95%
 }
 
 button {
 	position: fixed;
-	top: 65%;
+	bottom: 1em;
+	left: 15em;
 	width: 3em;
 	height: 3em;
 	margin-left: 1.5em;
 	border-radius: 100%;
-	border: 2px solid #3b3bc6;
+	border: 2px solid #603e76;
 	background-color: rgba(52, 41, 95, 0.48);
+}
+.button-click {
+	border-color: #33263b;
 }
 button i {
 	color: #c46c21;

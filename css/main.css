@@ -99,7 +99,6 @@ textarea {
 
 /** misc **/
 body {
-    font-family: 'Ubuntu', sans-serif;
     min-width: 20em;
 }
 .right {float: right;}
@@ -112,12 +111,6 @@ body {
 
 #hello-world ul {
     margin: 0;
-    -webkit-transform: translate3d(0px, 0px, 0px);
-    transform: translate3d(0px, 0px, 0px);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 #hello-world li {
@@ -135,15 +128,122 @@ body {
     overflow: hidden;
 }
 
-img {
+#hello-world img {
     position: absolute;
 }
 
+#hi {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
 
+#hi figure img {
+	position: fixed;
+	top: 0;
+	border-bottom-right-radius: 95%;
+}
+
+#hi figure img:hover {
+	padding-top: 3em;
+}
+
+#hi h3 {
+	margin: .8em 0;
+	padding-left: 1.7em;
+	color: rgb(186, 148, 137);
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-family: 'VT323';
+}
+
+#hi h2 {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding-left: 4.5em;
+	color: rgba(214, 109, 77, 0.63);
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-family: 'VT323';
+}
+
+.info {
+	position: fixed;
+	bottom: 0;
+	min-height: 17em;
+	width: 15.5em;
+	background: rgba(148, 148, 177, 0.17);
+	border-top-right-radius: 95%
+}
+
+button {
+	position: fixed;
+	top: 65%;
+	width: 3em;
+	height: 3em;
+	margin-left: 1.5em;
+	border-radius: 100%;
+	border: 2px solid #3b3bc6;
+	background-color: rgba(52, 41, 95, 0.48);
+}
+button i {
+	color: #c46c21;
+}
 
 /* ==========================================================================
    Animations
    ========================================================================== */
+
+.info img:hover{
+	-webkit-animation: earth 35s infinite linear;
+	-moz-animation: earth 35s infinite linear;
+	-ms-animation: earth 35s infinite linear;
+	-o-animation: earth 35s infinite linear;
+	animation: earth 35s infinite linear;
+}
+@keyframes earth {
+	0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes earth {
+	0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes earth {
+	0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes earth {
+	0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes earth {
+	0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 .wavy {
 	-webkit-animation: wavy 10s 2s infinite alternate cubic-bezier(0.32,0,0.58,1);
 	-moz-animation: wavy 10s 2s infinite alternate cubic-bezier(0.32,0,0.58,1);

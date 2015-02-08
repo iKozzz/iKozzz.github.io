@@ -110,6 +110,40 @@ body {
     background: url("../img/space.jpg");
 }
 
+figure img {
+	position: fixed;
+	top: 0;
+	border-bottom-right-radius: 95%;
+}
+
+.padding {
+	padding-top: 5em;
+}
+
+.eye {
+	position: fixed;
+	top: 12.7em;
+	left: 2.38em;
+	background-color: rgba(55, 255, 0, 0.15);
+	width: 1.08em;
+	height: 0.5em;
+	border-radius: 50%;
+	z-index: 1;
+	display: none;
+}
+
+figure {
+	width: 12.5em;
+}
+
+figure h3 {
+	margin: .8em 0;
+	padding-left: 1.7em;
+	color: rgb(186, 148, 137);
+	font-size: 1.2em;
+	text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -1,6 +1,11 @@
 $(document).ready(function () {
 	"use strict";
 	
+	$('figure').hover(function () {
+		$('.eye').toggle();
+		$('figure img').toggleClass("padding");
+	});
+	
 	$('.scroll').click(function (e) {
 		e.preventDefault();
         var destination = $(this).attr('href');

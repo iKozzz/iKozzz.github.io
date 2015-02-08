@@ -14,8 +14,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-		<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&subset=latin,cyrillic' rel='stylesheet' type='text/css'>		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body class="background">
@@ -25,25 +24,24 @@
 		<audio id="ambient"><source src="audio/ambi.mp3" type="audio/mpeg"></audio>
         <div id="hello-world" class="wrapper">
             <ul id="scene" class="scene">
-                <li class="layer" data-depth="0.25"><img class="floaty" src="img/fog_left.png" alt="fog-left"></li>
-                <li class="layer" data-depth="0.20"><img class="floaty-reverse" src="img/fog_right.png" alt="fog-right"></li>
-                <li class="layer" data-depth="0.06"><img class="wavy" src="img/brite.png" alt="brite"></li>
-                <li class="layer" data-depth="0.09"><img class="scally" src="img/heart_of_nebula.png" alt="heart"></li>
-                <li class="layer" data-depth="0.50"><img class="rotaty" src="img/glow_sparks.png" alt="sparks"></li>
+                <li class="layer l1" data-depth="0.15"><img class="floaty" src="img/fog-left.png" alt="fog-left"></li>
+                <li class="layer l2" data-depth="0.10"><img class="floaty-reverse" src="img/fog-right.png" alt="fog-right"></li>
+                <li class="layer l3" data-depth="0.10"><img class="rotaty" src="img/center-glow.png" alt="brite"></li>
+                <li class="layer l4" data-depth="0.09"><img class="wavy" src="img/nebula.png" alt="brite"></li>
+                <li class="layer l5" data-depth="0.09"><img class="scally" src="img/sparks1.png" alt="sp1"></li>
+                <li class="layer l6" data-depth="0.10"><img class="rotaty" src="img/sparks2.png" alt="sp2"></li>
             </ul>
         </div>
 		
 		<section id="hi">
 			<figure>
-				<h3>Alter Ego Media</h3>
-				<div class="eye"></div>
-				<img src="img/av.jpg" alt="avatar">
+				<img src="img/logo.png" alt="logo">
 			</figure>
 			
 			<button type="button"><i class="fa fa-2x fa-volume-up"></i></button>
 			
 			<div class="info">
-				<a href="portfolio.html"><img src="img/planet.png" alt="portfolio"></a>
+				<a href="portfolio.html"><img id="planet" src="img/planet.png" alt="portfolio"></a>
 				<h2>portfolio</h2>
 			</div>
 		</section>

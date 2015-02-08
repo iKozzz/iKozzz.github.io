@@ -132,6 +132,13 @@ body {
     position: absolute;
 }
 
+.l1 {top: -10%!important; left: -15%!important;}
+.l2 {top: 30%!important; left: 45%!important;}
+.l3 {top: -30%!important; left: -33% !important;}
+.l4 {top: 0!important; left: 8% !important;}
+.l5 {top: 1% !important; left: 5% !important;}
+.l6 {top: -11%!important; left: -5%!important;}
+
 #hi {
 	position: absolute;
 	top: 0;
@@ -142,44 +149,17 @@ body {
 #hi figure img {
 	position: fixed;
 	top: 0;
-	border-bottom-right-radius: 95%;
-}
-
-.padding {
-	padding-top: 3em;
-}
-
-.eye {
-	position: fixed;
-	top: 10.7em;
-	left: 2.38em;
-	background-color: rgba(216, 72, 182, 0.33);
-	width: 1.08em;
-	height: 0.5em;
-	border-radius: 50%;
-	z-index: 1;
-	display: none;
-}
-
-#hi h3 {
-	margin: .8em 0;
-	padding-left: 1.7em;
-	color: rgb(186, 148, 137);
-	font-size: 1.2em;
-	text-transform: uppercase;
-	font-family: 'VT323';
 }
 
 #hi h2 {
 	position: absolute;
 	bottom: 1em;
 	margin: 0;
-	padding-left: 4.5em;
+	padding-left: 2em;
 	color: rgba(214, 109, 77, 0.63);
 	font-size: 1.2em;
 	text-transform: uppercase;
-	font-family: 'VT323';
-}
+    font-family: 'Press Start 2P', cursive;}
 
 .info {
 	position: fixed;
@@ -193,8 +173,8 @@ body {
 
 button {
 	position: fixed;
-	bottom: 1em;
-	left: 15em;
+	top: 2em;
+	right: 2.5em;
 	width: 3em;
 	height: 3em;
 	margin-left: 1.5em;
@@ -213,52 +193,85 @@ button i {
    Animations
    ========================================================================== */
 
-.info img:hover{
-	-webkit-animation: earth 35s infinite linear;
-	-moz-animation: earth 35s infinite linear;
-	-ms-animation: earth 35s infinite linear;
-	-o-animation: earth 35s infinite linear;
-	animation: earth 35s infinite linear;
-}
-@keyframes earth {
+@keyframes earth-1 {
 	0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
-@-o-keyframes earth {
+@-o-keyframes earth-1 {
 	0% {
     -o-transform: rotate(0deg);
   }
   100% {
-    -o-transform: rotate(360deg);
+    -o-transform: rotate(180deg);
   }
 }
-@-ms-keyframes earth {
+@-ms-keyframes earth-1 {
 	0% {
     -ms-transform: rotate(0deg);
   }
   100% {
-    -ms-transform: rotate(360deg);
+    -ms-transform: rotate(180deg);
   }
 }
-@-moz-keyframes earth {
+@-moz-keyframes earth-1 {
 	0% {
     -moz-transform: rotate(0deg);
   }
   100% {
-    -moz-transform: rotate(360deg);
+    -moz-transform: rotate(180deg);
   }
 }
-@-webkit-keyframes earth {
+@-webkit-keyframes earth-1 {
 	0% {
     -webkit-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
   }
+}
+@keyframes earth-2 {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes earth-2 {
+    0% {
+        -o-transform: rotate(180deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes earth-2 {
+    0% {
+        -ms-transform: rotate(180deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes earth-2 {
+    0% {
+        -moz-transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes earth-2 {
+    0% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 .wavy {
@@ -406,57 +419,57 @@ button i {
 
 
 .floaty {
-	-webkit-animation: floaty 19s infinite 1.5s linear;
-	-moz-animation: floaty 19s infinite 1.5s linear;
-	-ms-animation: floaty 19s infinite 1.5s linear;
-	-o-animation: floaty 19s infinite 1.5s linear;
-	animation: floaty 19s infinite 1.5s linear;
+	-webkit-animation: floaty 19s infinite 1s linear;
+	-moz-animation: floaty 19s infinite 1s linear;
+	-ms-animation: floaty 19s infinite 1s linear;
+	-o-animation: floaty 19s infinite 1s linear;
+	animation: floaty 19s infinite 1s linear;
 }
 .floaty-reverse {
-	-webkit-animation: floaty 19s infinite 1s reverse;
-	-moz-animation: floaty 19s infinite 1s reverse;
-	-ms-animation: floaty 19s infinite 1s reverse;
-	-o-animation: floaty 19s infinite 1s reverse;
-	animation: floaty 19s infinite 1s reverse;
+	-webkit-animation: floaty 16s infinite 0.3s reverse;
+	-moz-animation: floaty 16s infinite 0.3s reverse;
+	-ms-animation: floaty 16s infinite 0.3s reverse;
+	-o-animation: floaty 16s infinite 0.3s reverse;
+	animation: floaty 16s infinite 0.3s reverse;
 }
 @keyframes floaty {
 	0% {
-    transform: rotateZ(0deg) translate3d(0,3%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,8%,0) rotateZ(0deg);
   }
   100% {
-    transform: rotateZ(360deg) translate3d(0,3%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,8%,0) rotateZ(-360deg);
   }
 }
 @-o-keyframes floaty {
 	0% {
-    -o-transform: rotateZ(0deg) translate3d(0,3%,0) rotateZ(0deg);
+    -o-transform: rotateZ(0deg) translate3d(0,8%,0) rotateZ(0deg);
   }
   100% {
-    -o-transform: rotateZ(360deg) translate3d(0,3%,0) rotateZ(-360deg);
+    -o-transform: rotateZ(360deg) translate3d(0,8%,0) rotateZ(-360deg);
   }
 }
 @-ms-keyframes floaty {
 	0% {
-    -ms-transform: rotateZ(0deg) translate3d(0,3%,0) rotateZ(0deg);
+    -ms-transform: rotateZ(0deg) translate3d(0,8%,0) rotateZ(0deg);
   }
   100% {
-    -ms-transform: rotateZ(360deg) translate3d(0,3%,0) rotateZ(-360deg);
+    -ms-transform: rotateZ(360deg) translate3d(0,8%,0) rotateZ(-360deg);
   }
 }
 @-moz-keyframes floaty {
 	0% {
-    -moz-transform: rotateZ(0deg) translate3d(0,3%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,8%,0) rotateZ(0deg);
   }
   100% {
-    -moz-transform: rotateZ(360deg) translate3d(0,3%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,8%,0) rotateZ(-360deg);
   }
 }
 @-webkit-keyframes floaty {
 	0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,3%,0) rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg) translate3d(0,8%,0) rotateZ(0deg);
   }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,3%,0) rotateZ(-360deg);
+    -webkit-transform: rotateZ(360deg) translate3d(0,8%,0) rotateZ(-360deg);
   }
 }
 

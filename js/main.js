@@ -24,7 +24,7 @@ $(document).ready(function () {
 	});
 
 	var sound = document.getElementById("ambient");
-	sound.autoplay = false;
+	sound.autoplay = true;
 	sound.loop = true;
 
 	$('button').on('click', function () {

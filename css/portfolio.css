@@ -34,7 +34,7 @@ a {
     text-decoration: none;
     font-family: 'Play', sans-serif;
     color: #f5f5f5;
-    cursor: default;
+    cursor: pointer;
 }
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -111,7 +111,7 @@ textarea {
    ========================================================================== */
 
 .background {
-    background: url("../img/space/back.png");
+    background: url("../img/works/back.png");
 }
 
 .padding {
@@ -129,7 +129,7 @@ figure h3 {
     width: 8em;
     top: 0;
 	padding-left: 1.5em;
-	color: rgb(186, 174, 170);
+	color: #feff96;
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
@@ -142,9 +142,13 @@ figure img {
     position: fixed;
     top: 1.5em;
     right: 1em;
+    background-color: rgba(225, 245, 245, 0.23);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 .contact i {
     display: block;
+    color: #fff9e6;
 }
 .contact a {
     display: inline-block;
@@ -152,7 +156,7 @@ figure img {
     text-decoration: none;
     text-align: right;
     font-size: 18px;
-    color: #f5f5f5;
+    color: #feff96;
     margin-left: 0.5em;
 }
 .contact a:hover {
@@ -166,14 +170,17 @@ figure img {
     width: 45%;
     line-height: 1.7;
     letter-spacing: 2px;
+    background-color: rgba(225, 245, 245, 0.15);
+    border-radius: 0.5rem;
+    padding: 0.1rem 2rem 1rem;
 }
 .opening h2 {
     text-align: center;
+    font-size: 2rem;
+    color: #feff96;
 }
 .opening h3 {
-    padding: 1em 2em;
-    background-color: rgba(186, 148, 137, 0.11);
-    border-radius: 0.5em;
+    color: #89bdff;
 }
 
 .works {
@@ -189,6 +196,10 @@ figure img {
     width: 60em;
     border-radius: 0.5em;
     margin: 1em auto 5em;
+    padding: 1rem 2rem;
+}
+.entry:hover {
+    background-color: rgba(78, 157, 255, 0.25);
 }
 
 .mockup, .laptop, .mobile, .preview, .description {
@@ -214,7 +225,7 @@ figure img {
 }
 .laptop {
     top: -474px;
-    left: 49px;
+    left: 46px;
     width: 370px;
     z-index: 1;
 }

@@ -120,12 +120,11 @@ textarea {
 
 figure {
 	width: 12.5em;
-    z-index: 999;
 }
 
 figure a:hover > figure img {padding-top: 5em;}
 figure h3 {
-    position: fixed;
+    position: absolute;
     width: 8em;
     top: 0;
 	padding-left: 1.5em;
@@ -134,17 +133,19 @@ figure h3 {
 	text-transform: uppercase;
 }
 figure img {
-    position: fixed;
+    position: absolute;
     top: 0;
     border-bottom-right-radius: 95%;
+    z-index: 999;
 }
 .contact {
-    position: fixed;
+    position: absolute;
     top: 1.5em;
     right: 1em;
-    background-color: rgba(225, 245, 245, 0.23);
+    background-color: rgba(25, 25, 25, 0.9);
     padding: 1rem;
     border-radius: 0.5rem;
+    z-index: 999;
 }
 .contact i {
     display: block;
@@ -236,8 +237,8 @@ figure img {
     z-index: 2;
 }
 
-.description {
-    color: #ffffff;
+.description h1{
+    color: #fdffa1;
 }
 
 .description p {
@@ -351,9 +352,60 @@ figure img {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 666px) {
+@media only screen and (max-width: 1250px) {
+    .opening {margin: 1.5rem 0 0 20%;}
 }
-
+@media only screen and (max-width: 1200px) {
+    .entry {margin-left: -2em;}
+}
+@media only screen and (max-width: 1100px) {
+    .opening {
+        margin: 15rem auto 0;
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .background {
+        background: url("../img/works/backSmall.png");
+    }
+    .entry {
+        margin: 1em auto;
+        width: auto;
+        height: 17em;
+    }
+    .mockup, .mobile {display: none;}
+    .laptop {
+        top: 0em;
+        left: 0;
+        width: 24em;
+    }
+    .description h1 {font-size: 1.5em;}
+    .description p, .opening h3 {font-size: 1.2em;}
+    .opening h2 {font-size: 1.7rem;}
+}
+@media only screen and (max-width: 875px) {
+    .opening {margin-top: 23rem;}
+    .entry {
+        margin: 1.5em auto;
+        width: auto;
+        height: auto;
+    }
+    .preview, .description {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media only screen and (max-width: 655px) {
+    .opening h3 {text-align: left;}
+}
+@media only screen and (max-width: 540px) {
+    .description h1 {font-size: 1.3em;}
+    .description p {font-size: 1.1em;}
+    .opening h3 {font-size: 1em;}
+    .opening h2 {font-size: 1.5rem;}
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r

@@ -106,28 +106,101 @@ textarea {
     padding: 0.2em 0;
 }
 
+/* =========================================================================
+   Animations
+   ========================================================================= */
+
+.stars {
+    -webkit-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    -moz-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    -ms-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    -o-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+}
+@keyframes stars {
+    0% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        transform: scale3d(1.25, 1.25, 1.25) rotate(3deg);
+    }
+    100% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-o-keyframes stars {
+    0% {
+        -o-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -o-transform: scale3d(1.25, 1.25, 1.25) rotate(3deg);
+    }
+    100% {
+        -o-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-ms-keyframes stars {
+    0% {
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -ms-transform: scale3d(1.25, 1.25, 1.25) rotate(3deg);
+    }
+    100% {
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-moz-keyframes stars {
+    0% {
+        -moz-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -moz-transform: scale3d(1.25, 1.25, 1.25) rotate(3deg);
+    }
+    100% {
+        -moz-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-webkit-keyframes stars {
+    0% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scale3d(1.25, 1.25, 1.25) rotate(3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 .background {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
     background: url("../img/works/back.png");
+    z-index: -1;
 }
 
 .padding {
-	padding-top: 5em;
+	padding-top: 4em;
+    opacity: 1;
 }
 
 figure {
 	width: 12.5em;
 }
 
-figure a:hover > figure img {padding-top: 5em;}
 figure h3 {
+    display: none;
     position: absolute;
-    width: 8em;
+    width: 10em;
     top: 0;
-	padding-left: 1.5em;
+	padding-left: 1.2em;
 	color: #feff96;
 	font-size: 1.2em;
 	text-transform: uppercase;
@@ -137,6 +210,7 @@ figure img {
     top: 0;
     border-bottom-right-radius: 95%;
     z-index: 999;
+    opacity: 0.3;
 }
 .contact {
     position: absolute;

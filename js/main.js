@@ -8,7 +8,7 @@ $(document).ready(function () {
 		$("#hello-world ul").css('height', $(window).height());
 	});
 
-	if ($(window).width() <= 1024) {
+	if ($(window).width() < 1024) {
         $('#scene').parallax({
             calibrateX: true,
             calibrateY: true,
@@ -16,10 +16,10 @@ $(document).ready(function () {
             invertY: true,
             limitX: false,
             limitY: false,
-            scalarX: 9,
-            scalarY: 7,
-            frictionX: 1.8,
-            frictionY: 1.6,
+            scalarX: 30,
+            scalarY: 25,
+            frictionX: 1,
+            frictionY: 1,
             originX: 0.5,
             originY: 0.5
         });
@@ -31,10 +31,10 @@ $(document).ready(function () {
             invertY: true,
             limitX: false,
             limitY: false,
-            scalarX: 9,
-            scalarY: 7,
-            frictionX: 0.8,
-            frictionY: 0.6,
+            scalarX: 10,
+            scalarY: 8,
+            frictionX: 0.1,
+            frictionY: 0.3,
             originX: 0.5,
             originY: 0.5
         });

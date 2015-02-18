@@ -110,7 +110,12 @@ textarea {
    ========================================================================== */
 
 .background {
-    background: url("../img/space/back.png");
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/works/back.png");
+    z-index: -1;
 }
 
 #hello-world ul {
@@ -137,12 +142,12 @@ textarea {
 }
 
 .l1 {top: -20%!important; left: -5%!important;}
-.l2 {top: -8%!important; left: 45%!important;}
-.l3 {top: -1%!important; left: 1% !important;}
-.l4 {top: -5%!important; left: 8% !important;}
-.l5 {top: -5%!important; left: 13% !important;}
-.l6 {top: 1% !important; left: 5% !important;}
-.l7 {top: -11%!important; left: -5%!important;}
+.l2 {top: -8%!important; left: 40%!important;}
+.l3 {top: -1%!important; left: 6% !important;}
+.l4 {top: -2%!important; left: 10% !important;}
+.l5 {top: -5%!important; left: 25% !important;}
+.l6 {top: 1% !important; left: 8% !important;}
+.l7 {top: -11%!important; left: 3%!important;}
 
 #hi {
 	position: absolute;
@@ -153,7 +158,8 @@ textarea {
 
 #hi figure img {
 	position: fixed;
-	top: 0;
+	top: 1.7rem;
+    left: 1rem;
 }
 
 #hi h2 {
@@ -298,6 +304,69 @@ button i {
     }
     100% {
         -webkit-transform: rotate(360deg);
+    }
+}
+
+.stars {
+    -webkit-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    -moz-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    -ms-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    -o-animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+    animation: stars 30s 0s infinite alternate cubic-bezier(0.32,0,0.58,1);
+}
+@keyframes stars {
+    0% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        transform: scale3d(1.25, 1.25, 1.25) rotate(-3deg);
+    }
+    100% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-o-keyframes stars {
+    0% {
+        -o-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -o-transform: scale3d(1.25, 1.25, 1.25) rotate(-3deg);
+    }
+    100% {
+        -o-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-ms-keyframes stars {
+    0% {
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -ms-transform: scale3d(1.25, 1.25, 1.25) rotate(-3deg);
+    }
+    100% {
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-moz-keyframes stars {
+    0% {
+        -moz-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -moz-transform: scale3d(1.25, 1.25, 1.25) rotate(-3deg);
+    }
+    100% {
+        -moz-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+}
+@-webkit-keyframes stars {
+    0% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scale3d(1.25, 1.25, 1.25) rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(0deg);
     }
 }
 
@@ -676,7 +745,7 @@ button i {
     .contact {top: initial; bottom: 1.5em; right: initial; padding-left: 1em;}
 }
 @media only screen and (max-height: 360px) {
-    .contact {display: none;}
+    .contact, .info, button {display: none;}
 }
 @media only screen and (max-height: 700px) and (orientation: portrait) {
     .info, button {display: none;}
@@ -685,6 +754,16 @@ button i {
     .info, button {display: none;}
 }
 
+
+@media only screen and (max-width: 1400px) {
+    .l1 {top: -20%!important; left: -15%!important;}
+    .l2 {top: -30%!important; left: 40%!important;}
+    .l3 {top: -5%!important; left: -5% !important;}
+    .l4 {top: -5%!important; left: 3% !important;}
+    .l5 {top: -3%!important; left: 10% !important;}
+    .l6 {top: -12% !important; left: -12% !important;}
+    .l7 {top: 0%!important; left: 0%!important;}
+}
 
 @media only screen and (max-width: 1200px) {
     .l1 {top: -20%!important; left: -25%!important;}
@@ -696,13 +775,27 @@ button i {
     .l7 {top: 1%!important; left: -10%!important;}
 }
 @media only screen and (max-width: 940px) {
-    .l4 {top: -5%!important; left: -10% !important;}
-    .l5 {top: -5%!important; left: -20% !important;}
+    .l1 {top: -15%!important; left: -60%!important;}
+    .l2 {top: 5%!important; left: 25%!important;}
+    .l3 {top: -10%!important; left: 5% !important;}
+    .l4 {top: -13%!important; left: -12% !important;}
+    .l5 {top: -5%!important; left: -38% !important;}
+    .l6 {top: 15% !important; left: -50% !important;}
+    .l7 {top: 5%!important; left: -30%!important;}
 }
 @media only screen and (max-width: 650px) {
-    .l3 {top: -15%!important; left: -22% !important;}
-    .l4 {top: -7%!important; left: -35% !important;}
-    .l5 {top: -10%!important; left: -74% !important;}
+    .l1 {top: -15%!important; left: -60%!important;}
+    .l2 {top: 5%!important; left: 25%!important;}
+    .l3 {top: -10%!important; left: -10% !important;}
+    .l4 {top: -13%!important; left: -40% !important;}
+    .l5 {top: -5%!important; left: -80% !important;}
+}
+@media only screen and (max-width: 400px) {
+    .l1 {top: -35%!important; left: -165%!important;}
+    .l2 {top: -30%!important; left: -40%!important;}
+    .l3 {top: -10%!important; left: -5% !important;}
+    .l4 {top: -20%!important; left: -88% !important;}
+    .l5 {top: -10%!important; left: -150% !important;}
 }
 /* ==========================================================================
    Print styles.

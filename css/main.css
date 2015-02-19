@@ -188,6 +188,8 @@ textarea {
     right: 1em;
 }
 .contact i {
+    position: relative;
+    top: 13px;
     display: block;
 }
 .contact a {

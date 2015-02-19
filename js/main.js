@@ -55,12 +55,6 @@ $(document).ready(function () {
 		$(this).toggleClass('button-click');
 	});
 
-	$('.scroll').click(function (e) {
-		e.preventDefault();
-		var destination = $(this).attr('href');
-		$('html, body').animate({scrollTop: $(destination).offset().top}, 800);
-	});
-
 	$('#planet')
 		.mouseenter(
 			function () {

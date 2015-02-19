@@ -472,6 +472,10 @@ footer a:hover {
     .entry {margin-left: -2em;}
 }
 @media only screen and (max-width: 1080px) {
+    #top {
+        margin-top: 1em;
+        padding: 0;
+    }
     .background {
         background: url("../img/works/backSmall.png");
     }

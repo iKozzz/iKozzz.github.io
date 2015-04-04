@@ -42,13 +42,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-.idea/.name
-.idea/encodings.xml
-.idea/minskcitizen.github.io.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/scopes/scope_settings.xml
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/dictionaries/iKo.xml
-.idea/iKozzz.github.io.iml
+.idea/*
+psd/*

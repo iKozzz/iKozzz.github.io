@@ -114,7 +114,7 @@ textarea {
     top: 0;
     height: 100vh;
     width: 100vw;
-    background: url("../img/works/back.png");
+    background: url("../img/back.png");
     z-index: -1;
 }
 

@@ -1,62 +1,38 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="EN">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>WebDesign from Minsk with love</title>
-        <meta name="description" content="WebDesign from Minsk with love">
+        <title>Automation Universe</title>
+        <meta content="Automation QA" name="description">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Play:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         <div class="background stars"></div>
-		<audio id="ambient"><source src="audio/ambi.mp3" type="audio/mpeg"></audio>
         <div id="hello-world" class="wrapper">
             <ul id="scene" class="scene">
-                <li class="layer l1" data-depth="0.10"><img class="floaty" src="img/space/fog-l.png" alt="fog-left"></li>
-                <li class="layer l2" data-depth="0.15"><img class="floaty-reverse" src="img/space/fog-r.png" alt="fog-right"></li>
-                <li class="layer l3" data-depth="0.18"><img class="rotaty" src="img/space/neb-l.png" alt="brite"></li>
-                <li class="layer l4" data-depth="0.4"><img class="wavy" src="img/space/neb-c.png" alt="brite"></li>
-                <li class="layer l5" data-depth="0.1"><img class="rotaty" src="img/space/neb-r.png" alt="brite"></li>
-                <li class="layer l6" data-depth="0.09"><img class="scally" src="img/space/sparks1.png" alt="sp1"></li>
-                <li class="layer l7" data-depth="0.08"><img class="rotaty" src="img/space/sparks2.png" alt="sp2"></li>
+                <li class="layer l1" data-depth="0.10"><img alt="fog-left" class="floaty" src="img/fog-l.png"></li>
+                <li class="layer l2" data-depth="0.15"><img alt="fog-right" class="floaty-reverse" src="img/fog-r.png">
+                </li>
+                <li class="layer l3" data-depth="0.18"><img alt="brite" class="rotaty" src="img/neb-l.png"></li>
+                <li class="layer l4" data-depth="0.4"><img alt="brite" class="wavy" src="img/neb-c.png"></li>
+                <li class="layer l5" data-depth="0.1"><img alt="brite" class="rotaty" src="img/neb-r.png"></li>
+                <li class="layer l6" data-depth="0.09"><img alt="sp1" class="scally" src="img/sparks1.png"></li>
+                <li class="layer l7" data-depth="0.08"><img alt="sp2" class="rotaty" src="img/sparks2.png"></li>
             </ul>
         </div>
 		
 		<section id="hi">
-			<figure>
-                <a href="portfolio.html"><img src="img/logo.png" alt="logo"></a>
-			</figure>
-
-			<div class="info">
-				<a href="portfolio.html"><img id="planet" src="img/planet.png" alt="portfolio"></a>
-				<h2>portfolio</h2>
-			</div>
-
-            <span class="contact">
-                <a href="mailto:minskcitizen@gmail.com"><i class="fa fa-envelope fa-3x"></i>minskcitizen@gmail.com</a>
-            </span>
-
-            <button type="button"><i class="fa fa-2x fa-volume-up"></i></button>
+            <div class="info">
+                <h2>welcome</h2>
+                <a href="https://github.com/iKozzz"><img alt="AUTOMATION UNIVERSE" id="planet" src="img/planet.png"></a>
+            </div>
 		</section>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>       
-        <script src="js/plugins.js"></script>
-        <script src="js/vendor/jquery.parallax.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
